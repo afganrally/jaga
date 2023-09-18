@@ -36,7 +36,7 @@ if ($row) {
     } else {
     ?>
         <div class="d-flex justify-content-center">
-            <img src="assets/images/" alt="" style="width: 300px;">
+            <img src="assets/images/tap.jpeg" alt="" style="width: 300px;">
         </div>
         <input type="text" id="val_ruang" value="" hidden>
         <input type="text" id="valRfid" value="" hidden>
