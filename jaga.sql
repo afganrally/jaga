@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 31, 2023 at 10:14 AM
+-- Generation Time: Sep 15, 2023 at 08:45 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -33,16 +33,6 @@ CREATE TABLE `aktivitas` (
   `status` varchar(20) NOT NULL,
   `waktu` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `aktivitas`
---
-
-INSERT INTO `aktivitas` (`id`, `rfid`, `status`, `waktu`) VALUES
-(102, 2147483647, 'keluar', '2023-08-30 06:43:08'),
-(103, 2147483647, 'masuk', '2023-08-30 06:46:16'),
-(104, 2147483647, 'keluar', '2023-08-30 06:46:17'),
-(105, 1781266729, 'keluar', '2023-08-30 06:46:53');
 
 -- --------------------------------------------------------
 
