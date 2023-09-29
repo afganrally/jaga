@@ -37,7 +37,6 @@ if ($row) {
     ?>
         <div class="d-flex justify-content-center">
             <img src="assets/images/tap.jpeg" alt="" style="width: 300px;">
-            <h1>Tidak Ditemukan</h1>
         </div>
         <input type="text" id="val_ruang" value="" hidden>
         <input type="text" id="valRfid" value="" hidden>
