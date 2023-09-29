@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 15, 2023 at 08:45 AM
+-- Generation Time: Sep 26, 2023 at 06:28 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -34,6 +34,14 @@ CREATE TABLE `aktivitas` (
   `waktu` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `aktivitas`
+--
+
+INSERT INTO `aktivitas` (`id`, `rfid`, `status`, `waktu`) VALUES
+(106, 1781266729, 'keluar', '2023-09-18 07:37:27'),
+(107, 1781266729, 'masuk', '2023-09-18 07:37:46');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +55,13 @@ CREATE TABLE `ruangan` (
   `kamar` varchar(10) NOT NULL,
   `tempat_tidur` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ruangan`
+--
+
+INSERT INTO `ruangan` (`rfid`, `nama_ruang`, `kelas`, `kamar`, `tempat_tidur`) VALUES
+(1781266729, 'Cendana', '1', 'A', '1');
 
 -- --------------------------------------------------------
 
@@ -115,13 +130,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `aktivitas`
 --
 ALTER TABLE `aktivitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- AUTO_INCREMENT for table `tmp`
 --
 ALTER TABLE `tmp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=272;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=313;
 
 --
 -- AUTO_INCREMENT for table `user`
